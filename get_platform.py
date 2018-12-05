@@ -15,7 +15,6 @@
 
 __author__      = "Michael E. O'Connor"
 __copyright__   = "Copyright 2018"
-__email__       = "gmikeoc@gmail.com"
 
 import platform
 
@@ -27,15 +26,15 @@ sys_arch = platform.architecture()
 proc_name = platform.processor()
 py_version = platform.python_version()
 
-platform_data = dict(
-    system = host_type,
-    platform = sys_platform,
-    nodename = node_name,
-    machine = mach_type,
-    architecture = sys_arch,
-    processor = proc_name,
-    python = py_version
-)
+platform_data = {
+    'system': host_type,
+    'platform': sys_platform,
+    'nodename': node_name,
+    'machine': mach_type,
+    'architecture': sys_arch,
+    'processor': proc_name,
+    'python': py_version
+    }
 
 def main():
 
